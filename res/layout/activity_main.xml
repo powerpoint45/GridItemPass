@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <GridView
+        android:id="@+id/light_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dark_grid"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:numColumns="3" >
+
+    </GridView>
+
+    <GridView
+        android:id="@+id/dark_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/darker_gray"
+        android:numColumns="3" >
+    </GridView>
+
+</RelativeLayout>
